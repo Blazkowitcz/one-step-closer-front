@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
-  <ion-card>
+  <ion-card *ngFor="let exercice of exercices">
     <ion-card-header style="display: flex; align-items: center; justify-content: center;">
-      <ion-card-title>Squat x 1</ion-card-title>
+      <ion-card-title>{{exercice.name}} x {{exercice.repetition}}</ion-card-title>
     </ion-card-header>
     <ion-card-content style="display: flex; align-items: center; justify-content: center;">
       <ion-button color="danger"><ion-icon name="thumbs-down-outline"></ion-icon>-1</ion-button>
